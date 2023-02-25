@@ -73,7 +73,7 @@ return (
                             {forecast.map((day, index) => (
                                   <li key={index}>
                                     {day} <div className="temp">
-                                              <img src={`http://openweathermap.org/img/wn/${weatherdata.list[index].weather[0].icon}@2x.png`} height='50px'></img>
+                                              <img src={`https://openweathermap.org/img/wn/${weatherdata.list[index].weather[0].icon}@2x.png`} height='50px'></img>
                                               <span>{(weatherdata.list[index].main.temp_max).toFixed()}&deg;</span>/
                                               <span>{(weatherdata.list[index].main.temp_min).toFixed()}&deg;</span>
                                           </div>

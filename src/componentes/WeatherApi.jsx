@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 // Api com Dados de hoje
-const baseUrl1 = 'http://api.openweathermap.org/data/2.5/weather?';
+const baseUrl1 = 'https://api.openweathermap.org/data/2.5/weather?';
 const apiKeyWeather = '6116c84adaeffe63996b51da42b18bc3';
 
 export const getWeatherData = async (cityname) => {
@@ -19,7 +19,7 @@ export const getWeatherData = async (cityname) => {
 
 // Api com Dados da semana
 
-const baseUrl2 = 'http://api.openweathermap.org/data/2.5/forecast?';
+const baseUrl2 = 'https://api.openweathermap.org/data/2.5/forecast?';
 
 export const getWeatherWeekDays = async (cityname) => {
     try{

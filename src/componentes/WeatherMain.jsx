@@ -81,7 +81,7 @@ export default function WeatherMain(props) {
             
             <div className='weather-daily'>
                <p>Hoje</p>
-               <img src={`http://openweathermap.org/img/wn/${weatherdata.weather[0].icon}@2x.png`} height='100px'></img>
+               <img src={`https://openweathermap.org/img/wn/${weatherdata.weather[0].icon}@2x.png`} height='100px'></img>
                <p>{weatherdata.weather[0].description}</p>
             </div>
          </div>
