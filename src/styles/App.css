@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    outline: none;
+}
+
+@font-face {
+    font-family: "Typepold";
+    src: url("../assets/fonts/Typold-Book500.otf") format("OpenType");
+}
+@font-face {
+    font-family: "stagnar-light";
+    src: url("../assets/fonts/stagnan-light.ttf") format("trueType");
+}
+@font-face {
+    font-family: "slateBold";
+    src: url("../assets/fonts/SlateBold.TTF") format("trueType");
+}
+
+.app{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+    text-shadow: 1px 1px 2px #333;
+}
+
+main{
+    display: inline;
+    float: left;
+    width: 65vw;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0px 60px;
+    
+}
+
+.topo-main{
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topo-main > h1 {
+    font-size: 27px;
+    font-family: "slateBold";
+}
+
+
+aside{
+    float: right;
+    width: 35vw;
+    height: 100%;
+    border: 1px solid #ffffff27;
+    border-radius: 28px 0 0 28px;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-top-style: none;
+    background-color: rgba(75, 75, 75, 0.3);
+    -webkit-backdrop-filter: blur(29px);
+    backdrop-filter: blur(29px);
+    box-sizing: border-box;
+    padding: 25px 100px;
+}
+
+.topo-aside{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+
+.container-Weather{
+    position: relative;
+    top: 560px;
+    left: 0;
+}
+
+
+/* Explore*/
+
+.explore{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+    border-radius: 60px;
+}
+.explore img {
+    padding: 9px;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    transition: 0.9s;
+}
+.explore button {
+    background: none;
+    border: none;  
+    height: 50px;
+    width: 50px;
+}
+
+.search-text{
+    background: #353535;
+    border:none;
+    border-radius: 6px 0 0 6px;
+    background:none;
+    outline:none;
+    float:left;
+    color: #fff;
+    font-size:16px;
+    transition : 0.7s;
+    line-height: 40px;
+    width : 0px;
+}
+.search-text::placeholder{
+    color: #ffffff5d;
+}
+.explore:hover > .search-text{
+    width: 240px;
+    padding: 0 6px;
+    background-color: #70707041;
+}
+.search-text:focus{
+    width: 240px;
+    padding: 0 6px;
+    background-color: #70707041;
+}
+
+.explore:hover.explore img{background-color: #70707083;}
+
+.explore:focus-within.explore img{background-color: #70707083;}
+
+
+
+/* Botão de hamburgue*/
+
+.btn-hamburgue-box{
+    width: 45px;
+    height: 45px;
+    display: none;
+}
+
+.btn-hamburgue, 
+.btn-hamburgue::before,
+.btn-hamburgue::after {
+    position: relative;
+    width: 35px;
+    border-radius: 25px;
+    height: 3px;
+    background-color: #fff;
+    cursor: pointer;
+
+}
+.btn-hamburgue::before,
+.btn-hamburgue::after {
+    content: "";
+   display: block;
+}
+.btn-hamburgue::before{
+    top: 10px;
+}
+.btn-hamburgue::after{
+    top: 17px
+}
+
+/*botão de close */
+
+.btn-close-box{
+    width: 65px;
+    height: 65px;
+    opacity: 0.7;
+    display: none;
+}
+
+.btn-close, 
+.btn-close::before{
+    position: relative;
+    width: 28px;
+    border-radius: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    cursor: pointer;
+
+}
+
+.btn-close{
+    transform: rotate(45deg) translate(7px, 7px);
+}
+.btn-close::before{
+    content: "";
+   display: block;
+   transform: rotate(-90deg) translate(0px, 0px);
+}
+
+
+/* media query*/
+@media (max-width: 1366px) {
+    .app{
+        
+    overflow-y: scroll;
+    }
+}
+
+
+@media (max-width: 1306px){
+    aside{
+        padding: 4px 19px;
+    }
+}
+
+@media (max-width: 950px){
+    aside{
+        display: none;
+        width: 100vw;
+        height: 100%;
+        position: absolute;
+        float: none;
+        overflow: hidden;
+    }
+    .container-Weather{
+        margin-top: -40px;
+    }
+
+    main{
+        width: 100vw;
+    }
+    .btn-hamburgue-box{display: block;}
+    .btn-close-box{display: block;}
+}
+
+
+@media (max-width: 620px) {
+    .container-Weather{
+        top: 520px;
+    }
+}
+
+@media (max-width: 554px) {
+    main{
+        padding: 0px 15px;
+    }
+}

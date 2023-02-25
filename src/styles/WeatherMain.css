@@ -1,0 +1,68 @@
+
+.temperatura{
+    font-size: 180px;
+    font-weight: bold;
+}
+
+.container-main-weather{
+    display: flex;
+    text-shadow: 1px 1px 3px black;
+}
+
+
+.location-and-date{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 60px 0px 10px;
+}
+.location-and-date span:first-child{
+    font-size: 40px;
+    font-family: "slateBold";
+    white-space: nowrap;
+}
+.location-and-date span:nth-child(2){
+    margin-top: 11px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: "stagnar-light";
+ 
+}
+
+
+.weather-daily{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 55px;
+    letter-spacing: 1px;
+ 
+}
+.weather-daily p:first-child{
+  position: relative;
+  font-size: 20px;
+  bottom: 5px;
+  font-family: "stagnar-light";
+}
+.weather-daily img{
+   margin-top: -12px;
+   font-family: "stagnar-light";
+}
+
+.weather-daily p:nth-child(3){
+    font-size: 20px;
+    font-family: "stagnar-light";
+    white-space: nowrap;
+}
+
+@media (max-width: 620px) {
+    .container-main-weather{
+        flex-wrap: wrap;
+        height: 230px;
+    }
+
+    .weather-daily{
+        flex-direction: row;
+        left: 10px;
+    }
+}

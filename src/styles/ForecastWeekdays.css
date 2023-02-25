@@ -1,0 +1,45 @@
+.container-weekdays{
+   margin-bottom: 47px;
+   margin-top: 15px;
+   padding: 6px 0px;
+   border: 1px solid #ffffff9c;
+   border-left-style: none;
+   border-right-style: none;
+   opacity: 0.6;
+}
+
+.day{
+  margin: 28px 0px;
+}
+.day ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 1px;
+  font-size: 19px;
+  list-style: none;
+  height: 30px;
+  margin-top: 39px;
+  font-family: "stagnar-light";
+}
+
+.temp{
+   margin-right: 25px;
+   display: flex;
+  align-items: center;
+}
+.temp img{
+  margin-right: 18px;
+  
+}
+.temp span:last-child{
+  margin-left: 3px;
+  opacity: 0.6
+}
+
+
+@media (max-width: 1306px) {
+   .container-weekdays{
+    margin-bottom: 29px;
+   }
+}
