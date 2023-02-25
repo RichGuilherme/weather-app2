@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/weather-project/static/css/main.f938c881.css",
+    "main.js": "/weather-project/static/js/main.7294b816.js",
+    "static/media/chuva.jpg": "/weather-project/static/media/chuva.cd72096a2f5ddf2828c8.jpg",
+    "static/media/nevando-na-cidade.jpg": "/weather-project/static/media/nevando-na-cidade.ad35c25ac0ea27edd101.jpg",
+    "static/media/day-cold.jpg": "/weather-project/static/media/day-cold.078faa8bdb384dbe59ec.jpg",
+    "static/media/ceu-limpo.jpg": "/weather-project/static/media/ceu-limpo.cf025c8144fabb01ca62.jpg",
+    "static/media/névoa.jpg": "/weather-project/static/media/névoa.5378d2d595ed1087ed0a.jpg",
+    "static/media/cidade-nublada.jpg": "/weather-project/static/media/cidade-nublada.d334260ce77baa4f6210.jpg",
+    "static/media/ceu-com-poucas-nuvens.jpg": "/weather-project/static/media/ceu-com-poucas-nuvens.2699e08458bbb3e56546.jpg",
+    "static/media/trovoada-na-cidade.jpg": "/weather-project/static/media/trovoada-na-cidade.0bd5960237ec2e3a24e8.jpg",
+    "static/media/SlateBold.TTF": "/weather-project/static/media/SlateBold.f83fd41319afe8c31f16.TTF",
+    "static/media/stagnan-light.ttf": "/weather-project/static/media/stagnan-light.75fab903443dee7e2377.ttf",
+    "static/media/Typold-Book500.otf": "/weather-project/static/media/Typold-Book500.6d270db7bbf4692df659.otf",
+    "static/media/iconAir.svg": "/weather-project/static/media/iconAir.ec25089fc07e3dd82fc9ad7c0633f76e.svg",
+    "static/media/iconWate.svg": "/weather-project/static/media/iconWate.68b00658267591f4cbb1b426aab5c5a6.svg",
+    "static/media/iconWeather.svg": "/weather-project/static/media/iconWeather.9b24cb5d4903664611253ab16e0e2cab.svg",
+    "index.html": "/weather-project/index.html",
+    "static/media/iconSun.svg": "/weather-project/static/media/iconSun.2fdf2c19171b5b062d255a9e93c5111b.svg",
+    "static/media/iconExplore.svg": "/weather-project/static/media/iconExplore.06e9703905c2faf73f74f35e29352fb8.svg",
+    "main.f938c881.css.map": "/weather-project/static/css/main.f938c881.css.map",
+    "main.7294b816.js.map": "/weather-project/static/js/main.7294b816.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f938c881.css",
+    "static/js/main.7294b816.js"
+  ]
+}
