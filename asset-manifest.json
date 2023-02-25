@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/weather-project/static/css/main.f938c881.css",
-    "main.js": "/weather-project/static/js/main.ec19d8a2.js",
+    "main.css": "/weather-project/static/css/main.d99e7e06.css",
+    "main.js": "/weather-project/static/js/main.516db19c.js",
     "static/media/chuva.jpg": "/weather-project/static/media/chuva.cd72096a2f5ddf2828c8.jpg",
     "static/media/nevando-na-cidade.jpg": "/weather-project/static/media/nevando-na-cidade.ad35c25ac0ea27edd101.jpg",
     "static/media/day-cold.jpg": "/weather-project/static/media/day-cold.078faa8bdb384dbe59ec.jpg",
@@ -13,17 +13,17 @@
     "static/media/SlateBold.TTF": "/weather-project/static/media/SlateBold.f83fd41319afe8c31f16.TTF",
     "static/media/stagnan-light.ttf": "/weather-project/static/media/stagnan-light.75fab903443dee7e2377.ttf",
     "static/media/Typold-Book500.otf": "/weather-project/static/media/Typold-Book500.6d270db7bbf4692df659.otf",
-    "static/media/iconAir.svg": "/weather-project/static/media/iconAir.92c622c9c306e0bb15208a8541f79924.svg",
-    "static/media/iconWate.svg": "/weather-project/static/media/iconWate.36b6d692546a4571318876d2dff5928a.svg",
-    "static/media/iconWeather.svg": "/weather-project/static/media/iconWeather.0694e55e62ab2c4ddf16056c045217dd.svg",
+    "static/media/iconAir.svg": "/weather-project/static/media/iconAir.ec25089fc07e3dd82fc9ad7c0633f76e.svg",
+    "static/media/iconWate.svg": "/weather-project/static/media/iconWate.68b00658267591f4cbb1b426aab5c5a6.svg",
+    "static/media/iconWeather.svg": "/weather-project/static/media/iconWeather.9b24cb5d4903664611253ab16e0e2cab.svg",
     "index.html": "/weather-project/index.html",
-    "static/media/iconSun.svg": "/weather-project/static/media/iconSun.73b4b76738e7385dbbdb3bd55189eeae.svg",
-    "static/media/iconExplore.svg": "/weather-project/static/media/iconExplore.a43781cfbb7099ad002796d57403d67e.svg",
-    "main.f938c881.css.map": "/weather-project/static/css/main.f938c881.css.map",
-    "main.ec19d8a2.js.map": "/weather-project/static/js/main.ec19d8a2.js.map"
+    "static/media/iconSun.svg": "/weather-project/static/media/iconSun.2fdf2c19171b5b062d255a9e93c5111b.svg",
+    "static/media/iconExplore.svg": "/weather-project/static/media/iconExplore.afc9b5f76da31816ebadb6ab26d2016b.svg",
+    "main.d99e7e06.css.map": "/weather-project/static/css/main.d99e7e06.css.map",
+    "main.516db19c.js.map": "/weather-project/static/js/main.516db19c.js.map"
   },
   "entrypoints": [
-    "static/css/main.f938c881.css",
-    "static/js/main.ec19d8a2.js"
+    "static/css/main.d99e7e06.css",
+    "static/js/main.516db19c.js"
   ]
 }
