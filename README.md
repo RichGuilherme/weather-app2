@@ -5,14 +5,15 @@
 <h4> ✔️ status: concluido </h4>
 
 <p align="center">
- <a href="#-sobre">Sobre</a> |
+ <a href="#-Sobre">Sobre</a> |
  <a href="#-instalar pré-requisistos">install<a/> |
  <a href="#-tecnologias">Tecnologias</a> | 
- <a href="#-licenca">Licença</a> | 
- <a href="#-autor">Autor</a> 
+ <a href="#licença">Licença</a> | 
+ <a href="#autor">Autor</a> 
 </p>
 ========================================================================================
-<h2>:information_source: Sobre</h2>
+
+## :information_source: Sobre
 &nbsp; Com intuito de ser um projeto prático afim de melhorar minhas habilidades. Esse projeto a ideia dele é baseando se na cidade pesquisada pelo usuário, irá aparecer alguma informações do clima e a previsão do tempo dos próximos dias. 
 <br></br>
 &nbsp; Além de possuir um background (fundo) que se altera de acordo com a descrição do clima local, tendo também um sistema de dia é noite que pode mostra uma imagem diferente se for dia ou noite no local pesquisado.
