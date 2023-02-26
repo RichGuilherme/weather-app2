@@ -3,6 +3,7 @@
 </h1>
 <h4>🌡️ Projeto que mostra a previsão do clima e tempo </h4>
 <h4> ✔️ status: concluido </h4>
+
 <p align="center">
  <a href="#-sobre">Sobre</a> |
  <a href="#-instalar pré-requisistos">install<a/> |
@@ -64,6 +65,6 @@ Está liberado para qualquer um! Mit licença
 Eu sou Richard Guilherme, tenho 19 anos e sou um developer front-end
 ### 👋Entre em Contato:
 
-[:link: Linkedin: Richard Guilherme](https://www.linkedin.com/in/richard-guilherme-396886228)
+[:link: Linkedin](https://www.linkedin.com/in/richard-guilherme-396886228)
 
 [:e-mail: E-mail](richard.guilhermeAS@hotmail.com )
