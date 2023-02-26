@@ -3,9 +3,10 @@ import React, {useEffect, useState}from 'react';
 import WeatherMain from './componentes/WeatherMain';
 import {WeatherDetails} from './componentes/DetailWeather';
 import {ForecastWeekdays} from './componentes/ForecastWeekdays';
-import iconExplore from './assets/iconExplore.svg';
 import {getWeatherData} from './componentes/WeatherApi'
-
+import {fundoDia} from './componentes/imagemIcon';
+import {fundoNoite} from './componentes/imagemIcon'
+import  explore  from './assets/iconExplore.svg';
 
 function App() {
     const [pesquisar, setPesquisar] = useState('');
@@ -14,9 +15,33 @@ function App() {
     const [loading, setLoading] = useState(false)
     const [imagem, setImage] = useState(null);
          
-    const handlerCity = () => {
-        setCity(pesquisar)
-        getData(city)
+    const handlerCity = (event) => {
+       const inputExplore = document.querySelector('.search-text')
+
+       if(inputExplore.value !== ""){
+         setCity(pesquisar)
+         getData(city)
+       } 
+
+        // Caso o input for em uma tela menor, ao executar a pesquisa a aba aside será desligada
+
+        let width = window.innerWidth
+        || document.documentElement.clientWidth
+        || document.body.clientWidth;
+        
+        if(inputExplore.value !== ''){
+          if(width <= 950){
+               const aside = document.querySelector('#aside')
+ 
+               aside.style.display = "none"
+          }
+        }
+
+     
+         setPesquisar('')
+         inputExplore.value = ''
+        
+
     }
     
    const handlerPressKey = (event) => {
@@ -49,59 +74,64 @@ function App() {
         let imageUrl = null;
         let diaOuNoite = weatherdata?.weather[0].icon?.includes("d")
 
-      if(diaOuNoite) {
+      if(diaOuNoite === true) {
+
         if ((weatherdata.main.temp).toFixed() < 0 && description.includes("neve") === false) {
-          imageUrl = require('./assets/backgroundDia/day-cold.jpg')
+          imageUrl = fundoDia.dayCold
 
         } else if (description.includes('limpo')){
-          imageUrl = require( './assets/backgroundDia/ceu-limpo.jpg')
+          imageUrl = fundoDia.ceuLimpo
   
         } else if (description.includes('nublado')) {
-          imageUrl = require('./assets/backgroundDia/cidade-nublada.jpg')
+          imageUrl = fundoDia.cidadeNublada
 
         } else if (description.includes('nuvens') ){
-          imageUrl = require('./assets/backgroundDia/ceu-com-poucas-nuvens.jpg')
+          imageUrl = fundoDia.ceuComPoucasNuvens
 
         } else if (description.includes('chuva')  || description.includes("chuvisco")) {
-          imageUrl = require('./assets/backgroundDia/chuva.jpg')
+          imageUrl = fundoDia.chuva
 
         } else if (description.includes('trovoada')){
-          imageUrl = require('./assets/backgroundDia/trovoada-na-cidade.jpg')
+          imageUrl = fundoDia.trovoadaNaCidade
 
         } else if (description.includes('neve')){
-          imageUrl = require('./assets/backgroundDia/nevando-na-cidade.jpg')
+          imageUrl = fundoDia.nevandoNaCidade
 
         } else if (description.includes('névoa')){
-          imageUrl = require('./assets/backgroundDia/névoa.jpg')
+          imageUrl = fundoDia.nevoa
         } 
-      } else {
+      }
+
+            if(diaOuNoite === false){
+
             if ((weatherdata.main.temp).toFixed() < 0 && description.includes("neve") === false) {
-              imageUrl = require('./assets/backgroundNoite/day-cold.jpg')
+              imageUrl = fundoNoite.dayCold
     
             } else if (description.includes("limpo")){
-              imageUrl = require('./assets/backgroundNoite/ceu-limpo.jpg')
+              imageUrl = fundoNoite.ceuLimpo
       
             } else if (description.includes('nublado')) {
-              imageUrl = require('./assets/backgroundNoite/cidade-nublada.jpg')
+              imageUrl = fundoNoite.cidadeNublada
     
             } else if (description.includes('nuvens') ){
-              imageUrl = require('./assets/backgroundNoite/ceu-com-poucas-nuvens.jpg')
+              imageUrl = fundoNoite.ceuComPoucasNuvens
     
             } else if (description.includes('chuva')  || description.includes("chuvisco")) {
-              imageUrl = require('./assets/backgroundNoite/chuva.jpg')
+              imageUrl = fundoNoite.chuva
     
             } else if (description.includes('trovoada')){
-              imageUrl = require('./assets/backgroundNoite/trovoada-na-cidade.jpg')
+              imageUrl = fundoNoite.trovoadaNaCidade
     
             } else if (description.includes('neve')){
-              imageUrl = require('./assets/backgroundNoite/nevando-na-cidade.jpg')
+              imageUrl =  fundoNoite.nevandoNaCidade
     
             } else if (description.includes('névoa')){
-              imageUrl = require('./assets/backgroundNoite/névoa.jpg')
+              imageUrl = fundoNoite.nevoa
             } 
 
       }
-
+        
+      
         setImage(imageUrl)
       }
     }, [weatherdata]);
@@ -109,6 +139,7 @@ function App() {
 
     const btnBumburgue = () => {
       const aside = document.querySelector('#aside')
+
       setTimeout(() => {
         aside.style.display = "block"
         
@@ -159,7 +190,7 @@ function App() {
                         placeholder='Procura cidade'>
                         </input>         
                         <button type="submit" className='search-btn'  onClick={handlerCity}>
-                                 <img src={iconExplore} height='22px' alt='iconExplore'></img> 
+                                 <img src={explore}  alt='iconExplore'></img> 
                         </button>
                     </div>
                 </div>

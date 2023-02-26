@@ -70,8 +70,8 @@ aside{
 
 .topo-aside{
     display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+    justify-content:  flex-end;
+    margin-top: 20px;
     
 }
 
@@ -81,27 +81,6 @@ aside{
     left: 0;
 }
 
-
-/* Explore*/
-
-.explore{
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 30px;
-    border-radius: 60px;
-}
-.explore img {
-    padding: 9px;
-    border-radius: 0 6px 6px 0;
-    cursor: pointer;
-    transition: 0.9s;
-}
-.explore button {
-    background: none;
-    border: none;  
-    height: 50px;
-    width: 50px;
-}
 
 .search-text{
     background: #353535;
@@ -129,6 +108,28 @@ aside{
     padding: 0 6px;
     background-color: #70707041;
 }
+
+
+/* Explore*/
+
+.explore{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+    border-radius: 60px;
+}
+.explore img {
+    padding: 9px;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    transition: 0.9s;
+}
+.explore button {
+    background: none;
+    border: none;  
+    height: 35px;
+}
+
 
 .explore:hover.explore img{background-color: #70707083;}
 
@@ -172,7 +173,8 @@ aside{
 .btn-close-box{
     width: 65px;
     height: 65px;
-    opacity: 0.7;
+    opacity: 0.8;
+    margin-top: 6px;
     display: none;
 }
 
@@ -181,7 +183,7 @@ aside{
     position: relative;
     width: 28px;
     border-radius: 25px;
-    height: 3px;
+    height: 2px;
     background-color: #ffffff;
     cursor: pointer;
 
@@ -201,7 +203,7 @@ aside{
 @media (max-width: 1366px) {
     .app{
         
-    overflow-y: scroll;
+        overflow-y: auto;
     }
 }
 
@@ -219,12 +221,14 @@ aside{
         height: 100%;
         position: absolute;
         float: none;
-        overflow: hidden;
+        overflow: auto;
     }
     .container-Weather{
         margin-top: -40px;
     }
-
+    .topo-aside{
+        justify-content: space-between;
+    }
     main{
         width: 100vw;
     }
