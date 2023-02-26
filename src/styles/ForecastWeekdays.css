@@ -30,6 +30,7 @@
 }
 .temp img{
   margin-right: 18px;
+  filter: drop-shadow(1px 2px 3px black);
   
 }
 .temp span:last-child{

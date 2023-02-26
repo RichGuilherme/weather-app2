@@ -15,8 +15,11 @@ function App() {
     const [loading, setLoading] = useState(false)
     const [imagem, setImage] = useState(null);
          
+
+    
     const handlerCity = (event) => {
        const inputExplore = document.querySelector('.search-text')
+
 
        if(inputExplore.value !== ""){
          setCity(pesquisar)
@@ -40,32 +43,50 @@ function App() {
      
          setPesquisar('')
          inputExplore.value = ''
-        
-
-    }
+      }
     
-   const handlerPressKey = (event) => {
-        if(event.key === "Enter"){
-          handlerCity()
-        }
-   } 
-    
-    const getData = async (city) => {
-         try{
-               const data = await getWeatherData(city ? city : "Belo horizonte")
-               setWeatherData(data)
-               setLoading(false)
-               
-             }catch(error) {
-             setLoading(false)
+      const btnBumburgue = () => {
+        const aside = document.querySelector('#aside')
+  
+        setTimeout(() => {
+          aside.style.display = "block"
+          
+        }, 200);
+      }
+  
+      const btnClose = () => {
+        const aside = document.querySelector('#aside')
+  
+         aside.style.display = "none"
+      }
+  
+  
+      const handlerPressKey = (event) => {
+           if(event.key === "Enter"){
+             handlerCity()
            }
-         }
+      } 
+       
+       const getData = async (city) => {
+            try{
+                  const data = await getWeatherData(city ? city : "Belo horizonte")
+                  setWeatherData(data)
+                  setLoading(false)
+                  
+                }catch(error) {
+                setLoading(false)
+              }
+            }
+         
+
          
     useEffect(() => {
          getData(city)
          
     }, [city])
     
+    
+
     useEffect(() => {
       if (weatherdata) {
         const description = weatherdata?.weather[0].description?.toLowerCase()
@@ -97,7 +118,7 @@ function App() {
         } else if (description.includes('neve')){
           imageUrl = fundoDia.nevandoNaCidade
 
-        } else if (description.includes('névoa')){
+        } else if (description.includes('névoa') || description.includes("neblina")){
           imageUrl = fundoDia.nevoa
         } 
       }
@@ -135,23 +156,6 @@ function App() {
         setImage(imageUrl)
       }
     }, [weatherdata]);
-
-
-    const btnBumburgue = () => {
-      const aside = document.querySelector('#aside')
-
-      setTimeout(() => {
-        aside.style.display = "block"
-        
-      }, 200);
-    }
-
-    const btnClose = () => {
-      const aside = document.querySelector('#aside')
-
-       aside.style.display = "none"
-    }
-
 
 
   return (

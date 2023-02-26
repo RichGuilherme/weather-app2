@@ -47,6 +47,7 @@
 .weather-daily img{
    margin-top: -12px;
    font-family: "stagnar-light";
+   filter: drop-shadow(1px 2px 2px black);
 }
 
 .weather-daily p:nth-child(3){

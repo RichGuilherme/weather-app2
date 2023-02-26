@@ -55,21 +55,21 @@ return(
      <h1> Detalhes do clima hoje </h1>
      <div className='container-espefications-weather'>
          <div className="espefications-weather">
-              <p>Umidade <img src={iconWateDrop} alt='iconWateDrop'></img> </p> 
+              <p> <img src={iconWateDrop} alt='iconWateDrop'></img> Umidade </p> 
               <span>{weatherdata.main.humidity}%</span>
          </div>
  
          <div className="espefications-weather">
-              <p>Vento <img src={iconAir} alt='iconAir'></img></p> 
+              <p><img src={iconAir} alt='iconAir'></img>Vento</p> 
               <span>{weatherdata.wind.speed}km/h</span>
          </div>
  
          <div className="espefications-weather">
-              <p>Sensação térmica <img src={iconWeather} alt='iconWeather'></img></p> 
+              <p> <img src={iconWeather} alt='iconWeather'></img> Sensação térmica</p> 
               <span>{(weatherdata.main.feels_like).toFixed()}&deg;</span>
          </div>
          <div className="espefications-weather">
-              <p>{diaOuNoite ? "Por do sol" : "Nascer do sol"} <img src={iconSun} alt='iconSun'></img> </p> 
+              <p> <img src={iconSun} alt='iconSun'></img>  {diaOuNoite ? "Por do sol" : "Nascer do sol"}</p> 
               <span>{diaOuNoite ? horasMinutos(sunset) : horasMinutos(sunrise)}</span>
          </div>
  
