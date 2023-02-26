@@ -19,11 +19,11 @@
 &nbsp; O projeto conta também com as horas e minutos do dia, além do dia, mês e ano.
 
 - Imagem do projeto:
-![Captura]()
+![Captura](https://github.com/RichGuilherme/weather-project/blob/main/src/assets/readme/Captura%20de%20tela%20de%202023-02-26%2017-08-58.png)
 
-- Calculadora em execução:
+- projeto em execução:
 <p align="center">
-  <img src="" alt="">
+  <img src="https://github.com/RichGuilherme/weather-project/blob/main/src/assets/readme/WhatsApp%20Video%202023-02-23%20at%2015.16.03.gif" alt="weather">
 </p>
 
 
