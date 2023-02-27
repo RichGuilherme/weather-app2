@@ -55,7 +55,6 @@ main{
 aside{
     float: right;
     width: 35vw;
-    height: 100%;
     border: 1px solid #ffffff27;
     border-radius: 28px 0 0 28px;
     border-right-style: none;
