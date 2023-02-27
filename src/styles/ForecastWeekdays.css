@@ -38,9 +38,8 @@
   opacity: 0.6
 }
 
-
-@media (max-width: 1306px) {
+@media (max-width: 1600px) {
    .container-weekdays{
-    margin-bottom: 29px;
+    margin-bottom: 19px;
    }
 }

@@ -30,7 +30,9 @@
 }
 
 main{
-    display: inline;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     float: left;
     width: 65vw;
     height: 100%;
@@ -55,6 +57,7 @@ main{
 aside{
     float: right;
     width: 35vw;
+    height: 100%;
     border: 1px solid #ffffff27;
     border-radius: 28px 0 0 28px;
     border-right-style: none;
@@ -72,12 +75,6 @@ aside{
     justify-content:  flex-end;
     margin-top: 20px;
     
-}
-
-.container-Weather{
-    position: relative;
-    top: 560px;
-    left: 0;
 }
 
 
@@ -194,15 +191,18 @@ aside{
 .btn-close::before{
     content: "";
    display: block;
-   transform: rotate(-90deg) translate(0px, 0px);
+   transform: rotate(-90deg) translate(0, 0);
 }
 
 
 /* media query*/
-@media (max-width: 1366px) {
+@media (max-width: 1440px) {
     .app{
-        
         overflow-y: auto;
+    }
+
+    .topo-aside{
+        margin: 0;
     }
 }
 
