@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/weather-project/static/css/main.f05d4165.css",
+    "main.css": "/weather-project/static/css/main.62038dd4.css",
     "main.js": "/weather-project/static/js/main.87597952.js",
     "static/media/chuva.jpg": "/weather-project/static/media/chuva.cd72096a2f5ddf2828c8.jpg",
     "static/media/nevando-na-cidade.jpg": "/weather-project/static/media/nevando-na-cidade.ad35c25ac0ea27edd101.jpg",
@@ -19,11 +19,11 @@
     "index.html": "/weather-project/index.html",
     "static/media/iconSun.svg": "/weather-project/static/media/iconSun.2fdf2c19171b5b062d255a9e93c5111b.svg",
     "static/media/iconExplore.svg": "/weather-project/static/media/iconExplore.2ba5cecaa53a22cb13a5a366547fc746.svg",
-    "main.f05d4165.css.map": "/weather-project/static/css/main.f05d4165.css.map",
+    "main.62038dd4.css.map": "/weather-project/static/css/main.62038dd4.css.map",
     "main.87597952.js.map": "/weather-project/static/js/main.87597952.js.map"
   },
   "entrypoints": [
-    "static/css/main.f05d4165.css",
+    "static/css/main.62038dd4.css",
     "static/js/main.87597952.js"
   ]
 }
