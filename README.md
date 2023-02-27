@@ -1,7 +1,18 @@
-# ☁️ Weather Project
-### 🌡️ Projeto de uma app de clima e previsão de tempo
-### ✔️ status: concluido
+<h1 align="center">
+ ☁️ Weather Project
+</h1>
+<h4>🌡️ Projeto que mostra a previsão do clima e tempo </h4>
+<h4> ✔️ status: concluido </h4>
+
+<p align="center">
+ <a href="#-Sobre">Sobre</a> |
+ <a href="#-instalar pré-requisistos">install<a/> |
+ <a href="#-tecnologias">Tecnologias</a> | 
+ <a href="#licença">Licença</a> | 
+ <a href="#autor">Autor</a> 
+</p>
 ========================================================================================
+
 ## :information_source: Sobre
 &nbsp; Com intuito de ser um projeto prático afim de melhorar minhas habilidades. Esse projeto a ideia dele é baseando se na cidade pesquisada pelo usuário, irá aparecer alguma informações do clima e a previsão do tempo dos próximos dias. 
 <br></br>
@@ -9,18 +20,52 @@
 <br></br>
 &nbsp; O projeto conta também com as horas e minutos do dia, além do dia, mês e ano.
 
-### Imagem do projeto:
-![Captura](https://user-images.githubusercontent.com/102478178/199374185-a9a33c50-0e56-4c42-abc4-d2ccbd3e88c9.png)
+- Imagem do projeto:
+![Captura](https://github.com/RichGuilherme/weather-project/blob/main/src/assets/readme/Captura%20de%20tela%20de%202023-02-26%2017-08-58.png)
 
-Calculadora em execução:
+- projeto em execução:
 <p align="center">
-  <img src="https://github.com/RichGuilherme/Calculadora/blob/main/assets/ezgif.com-gif-maker%20(4).gif" alt="Calculadora">
+  <img src="https://github.com/RichGuilherme/weather-project/blob/main/src/assets/readme/WhatsApp%20Video%202023-02-23%20at%2015.16.03.gif" alt="weather">
 </p>
+
+
+## Instalar pré-requisitos
+Antes de instalar é necessario possuir na máquina: [git](https://git-scm.com), [npm]((https://docs.npmjs.com/cli/v6/commands/npm-install)) ou [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable) 
+
+- clone o repositorino no git <br><br>
+$ git clone https://github.com/RichGuilherme/weather-project <br>
+$ cd weather-project
+
+- instalar as depêndencias e começa o projeto:<br>
+$ npm install <br>
+$ npm start <br><br>
+ou <br><br>
+$ yarn install <br>
+$ yarn start
+
+- abri o editor de texto de preferência 
+
+<br>
 
 ## 🚀 Tecnologias 
 Usei as tecnologias que estou estudando recentemente que são:
-* **JavaScprit**
-* **CSS**
-* **HTML**
-* **IDE VisualCode**
+- **JavaScript**
+- **CSS**
+- **HTML**
+- **React.Js** 
+- **Axios**
+- **IDE VisualCode**
 
+<br>
+<h2> licença </h2> 
+Está liberado para qualquer um! Mit licença
+
+<br>
+
+## 👨‍🎓Autor
+Eu sou Richard Guilherme, tenho 19 anos e sou um developer front-end
+### 👋Entre em Contato:
+
+[:link: Linkedin](https://www.linkedin.com/in/richard-guilherme-396886228)
+
+[:e-mail: E-mail](richard.guilhermeAS@hotmail.com )
