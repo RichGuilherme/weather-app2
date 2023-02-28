@@ -14,7 +14,7 @@
 ========================================================================================
 
 ## :information_source: Sobre
-&nbsp; Com intuito de ser um projeto prático afim de melhorar minhas habilidades. Esse projeto a ideia dele é baseando se na cidade pesquisada pelo usuário, irá aparecer alguma informações do clima e a previsão do tempo dos próximos dias. 
+&nbsp; Com intuito de ser um projeto prático afim de melhorar minhas habilidades. Esse projeto a ideia dele é baseando se na cidade pesquisada pelo usuário, irá aparecer alguma informações do clima e a previsão do tempo dos próximos dias. Para obter essas informações eu usei a API Open Weather, que fornece os dados de forma precisa para nós.
 <br></br>
 &nbsp; Além de possuir um background (fundo) que se altera de acordo com a descrição do clima local, tendo também um sistema de dia é noite que pode mostra uma imagem diferente se for dia ou noite no local pesquisado.
 <br></br>
