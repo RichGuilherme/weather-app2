@@ -8,7 +8,7 @@
  <a href="#-Sobre">Sobre</a> |
  <a href="#-instalar pré-requisistos">instalar pré-requisistos<a/> |
  <a href="#-tecnologias">Tecnologias</a> | 
- <a href="#licença">licença</a> | 
+ <a href="#-licença-">licença</a> | 
  <a href="#autor">Autor</a> 
 </p>
 ========================================================================================
