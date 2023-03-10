@@ -19,6 +19,8 @@
 &nbsp; Além de possuir um background (fundo) que se altera de acordo com a descrição do clima local, tendo também um sistema de dia é noite que pode mostra uma imagem diferente se for dia ou noite no local pesquisado.
 <br></br>
 &nbsp; O projeto conta também com as horas e minutos do dia, além do dia, mês e ano.
+<br></br>
+&nbsp; O templete que usei como inspiração está nesse link: https://dribbble.com/shots/13950420-Weather-App-Clima 
 
 - Imagem do projeto:
 ![Captura](https://github.com/RichGuilherme/weather-project/blob/main/src/assets/readme/Captura%20de%20tela%20de%202023-02-26%2017-08-58.png)
