@@ -5,7 +5,7 @@
 <h4> ✔️ status: concluido </h4>
 
 <p align="center">
- <a href="#-Sobre">Sobre</a> |
+ <a href="#information_source-Sobre">Sobre</a> |
  <a href="#-instalar pré-requisistos">instalar pré-requisistos<a/> |
  <a href="#-tecnologias">Tecnologias</a> | 
  <a href="#-licença-">licença</a> | 
