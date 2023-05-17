@@ -1,6 +1,6 @@
 
 .temperatura{
-    font-size: 180px;
+    font-size: 11.25rem;
     font-weight: bold;
 }
 
@@ -65,5 +65,15 @@
     .weather-daily{
         flex-direction: row;
         left: 10px;
+    }
+
+    .location-and-date {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 446px) {
+    .location-and-date span:first-child {
+        font-size: 9vw;
     }
 }

@@ -1,30 +1,14 @@
-import '../styles/ForecastWeekdays.css'
-import { useState, useEffect } from 'react'
-import {getWeatherWeekDays} from './WeatherApi'
+import './ForecastWeekdays.css'
 
+import { useState, useEffect, useContext } from 'react'
 
-export function ForecastWeekdays (props) {
-    const [weatherdata, setWeatherData] = useState(null)
-    const [loading, setLoading] = useState(false)
+import {DataWeather}  from '../../context/DataWeatherContent';
+
+export default function ForecastWeekdays (props) {
+    const {weatherDatas} = useContext(DataWeather)
+    const weatherdata = weatherDatas?.data
+
     const [forecast, setForecast] = useState([]);
-    
-    const getData = async (city) => {
-         try{
-             const data = await getWeatherWeekDays(city ? city : "Belo horizonte")
-             
-               setWeatherData(data)
-               setLoading(false)
-
-              
-             }catch(error) {
-             setLoading(false)
-           }
-         }
-         
-         useEffect(() => {
-             getData(props.city)
-             
-         }, [props.city])
 
          useEffect(() => {
             if (weatherdata) {
@@ -62,8 +46,8 @@ export function ForecastWeekdays (props) {
 
 return (
         <>
-        {weatherdata !==  null? (
-          <>
+        {weatherdata !==  undefined ? (
+          <section id='forecastWeather'>
            <h1>Dias da Semana</h1>
            
            <div className="container-weekdays">
@@ -83,7 +67,7 @@ return (
                     ) : "Erro"}
                  </div>
            </div>
-           </>
+           </section>
            ) : null}
         </>
     

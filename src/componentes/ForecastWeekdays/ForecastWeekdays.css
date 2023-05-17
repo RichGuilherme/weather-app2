@@ -1,5 +1,9 @@
+#forecastWeather{
+  margin-bottom: 47px;
+  margin-inline: 53px;
+}
+
 .container-weekdays{
-   margin-bottom: 47px;
    margin-top: 15px;
    padding: 6px 0px;
    border: 1px solid #ffffff9c;
@@ -38,8 +42,9 @@
   opacity: 0.6
 }
 
-@media (max-width: 1600px) {
-   .container-weekdays{
-    margin-bottom: 19px;
-   }
+@media (max-width: 1307px) {
+    #forecastWeather {
+       margin-top: 65px;
+       margin-inline: 10px;
+    }
 }

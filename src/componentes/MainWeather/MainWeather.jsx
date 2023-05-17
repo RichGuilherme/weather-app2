@@ -1,27 +1,15 @@
-import { useState, useEffect} from "react"
-import '../styles/WeatherMain.css'
-import {getWeatherData} from './WeatherApi'
+import { useState,  useContext} from "react"
+import {DataWeather}  from '../../context/DataWeatherContent';
 
-export default function WeatherMain(props) {
-  const [weatherdata, setWeatherData] = useState(null)
-  const [loading, setLoading] = useState(false)
-  const [horasLocais, setHorasLocais] = useState(0)
+import './MainWeather.css'
 
-  const getData = async (city) => {
-  try{
-        const data = await getWeatherData(city ? city : "Belo horizonte")
-        setWeatherData(data)
-        setLoading(false)
-       
-        if (data && data.timezone) {
-          const timezoneOffset = data.timezone / 3600;
-          setHorasLocais(timezoneOffset);
-        }
-      }catch(error) {
-        setLoading(false)
-      }
-    }
-  
+
+
+export default function MainWeather() {
+
+  const {weatherDatas} = useContext(DataWeather)
+  const weatherdata = weatherDatas?.data
+
 
   const [relogio, setRelorio] = useState(() => {
 
@@ -61,31 +49,26 @@ export default function WeatherMain(props) {
        return ` ${diaDaSemana}, ${day} / ${mesDoano}'${year}`
   }
 
-  useEffect(() => {
-      getData(props.city)
-      
-   }, [props.city])
-
+ 
   return (
     <>
-
-        {weatherdata !== null ? (
-        <>
-         <p className="temperatura"><span>{(weatherdata.main.temp).toFixed()}</span>&deg;</p>
+        {weatherdata !== undefined ? (
+        <div>
+         <p className="temperatura"><span>{(weatherdata.list[0].main.temp).toFixed()}</span>&deg;</p>
 
          <div className="container-main-weather">
             <div className='location-and-date'>
-              <span>{weatherdata.name}-{weatherdata.sys.country}</span>
+              <span>{weatherdata.city.name}-{weatherdata.city.country}</span>
               <span>{relogio}-{date()}</span> 
             </div>
             
             <div className='weather-daily'>
                <p>Hoje</p>
-               <img src={`https://openweathermap.org/img/wn/${weatherdata.weather[0].icon}@2x.png`} height='100px'></img>
-               <p>{weatherdata.weather[0].description}</p>
+               <img src={`https://openweathermap.org/img/wn/${weatherdata.list[0].weather[0].icon}@2x.png`} height='100px'></img>
+               <p>{weatherdata.list[0].weather[0].description}</p>
             </div>
          </div>
-         </>
+         </div>
          ): null}
       </>
   )

@@ -1,0 +1,31 @@
+#informationWeather{
+    margin-inline: 53px;
+}
+
+.container-espefications-weather{
+    margin-top: 50px;
+    opacity: 0.6;
+}
+
+.espefications-weather{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-right: 25px;
+    letter-spacing: 1px;
+    font-size: 19px;
+    
+}
+.espefications-weather p{
+    display: flex;
+    align-items: center;
+    font-family: "stagnar-light";
+}
+
+@media (max-width: 1307px) {
+     #informationWeather {
+         margin-inline: 10px;
+         margin-bottom: 40px;
+     }
+}
