@@ -11,7 +11,7 @@ import iconSun from '../../assets/iconSun.svg'
 
 
 
-export default function InformationWeather (props) {
+export default function InformationWeather () {
           const {weatherDatas} = useContext(DataWeather)
           const weatherdata = weatherDatas?.data
           
@@ -30,7 +30,6 @@ export default function InformationWeather (props) {
            
 
           const diaOuNoite = weatherdata?.list[0].weather[0].icon?.includes("d")
-
 
 
 

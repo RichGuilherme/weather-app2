@@ -23,13 +23,12 @@ export default function ForecastWeekdays (props) {
                     return dayOfWeek
                 })
 
-
-                const weekTemp_min = filtrarForecast.map(forecast => {
+                     filtrarForecast.map(forecast => {
                      const temp_min = forecast.main.temp_min
 
                      return temp_min
                 })
-                const weekTemp_max = filtrarForecast.map(forecast => {
+                     filtrarForecast.map(forecast => {
                      const temp_max = forecast.main.temp_max
 
                      return temp_max
@@ -46,7 +45,7 @@ export default function ForecastWeekdays (props) {
 
 return (
         <>
-        {weatherdata !==  undefined ? (
+
           <section id='forecastWeather'>
            <h1>Dias da Semana</h1>
            
@@ -57,7 +56,10 @@ return (
                             {forecast.map((day, index) => (
                                   <li key={index}>
                                     {day} <div className="temp">
-                                              <img src={`https://openweathermap.org/img/wn/${weatherdata.list[index].weather[0].icon}@2x.png`} height='50px'></img>
+                                              <img
+                                              alt= "icon do tempo"
+                                              src={`https://openweathermap.org/img/wn/${weatherdata.list[index].weather[0].icon}@2x.png`} 
+                                              height='50px'></img>
                                               <span>{(weatherdata.list[index].main.temp_max).toFixed()}&deg;</span>/
                                               <span>{(weatherdata.list[index].main.temp_min).toFixed()}<sup>&deg;c</sup></span>
                                           </div>
@@ -68,7 +70,7 @@ return (
                  </div>
            </div>
            </section>
-           ) : null}
+      
         </>
     
     )

@@ -18,7 +18,7 @@ export default function Explore () {
     }
   } 
   
-  const handlerCity = (event) => {
+  const handlerCity = () => {
     const inputExplore = document.querySelector('.search-text')    
       setCity(pesquisar)
 
