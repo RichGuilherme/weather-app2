@@ -30,7 +30,7 @@ export default function Explore () {
            if(city !== null && city !== ""){
              setCityname(city)
            }
-    }, [handlerCity])
+    }, [city, setCityname])
     
 
   return (
@@ -44,6 +44,7 @@ export default function Explore () {
                 onKeyDown={handlerPressKey}
                 placeholder='Procura cidade'>
                 </input>         
+                
                 <button type="submit" className='search-btn'  onClick={handlerCity}>
                          <img src={explore}  alt='iconExplore'></img> 
                 </button>

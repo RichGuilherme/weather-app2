@@ -11,8 +11,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     margin-top: 40px;
     margin-right: 25px;
+
     letter-spacing: 1px;
     font-size: 19px;
     
@@ -20,6 +22,7 @@
 .espefications-weather p{
     display: flex;
     align-items: center;
+    
     font-family: "stagnar-light";
 }
 

@@ -5,22 +5,20 @@ import axios from "axios";
 export const DataWeather = createContext()
 
 const baseUrl = 'https://api.openweathermap.org/data/2.5/forecast?';
-const apiKeyWeather = '6116c84adaeffe63996b51da42b18bc3'
+const apiKeyWeather = process.env.REACT_APP_KEY
 
 
 function ApiProvider ({children}) {
-
     const [cityname, setCityname] = useState(null)
     const [weatherDatas, setWeatherdata] = useState(null)
+    const [loading, setLoading] = useState(true)
     
     const getData = async (city) => {
         try{
                 const data = await axios.get(baseUrl + `q=${city !== null ? city : "belo horizonte"}&lang=pt_br&units=metric&appid=${apiKeyWeather}`);
-                 
                 setWeatherdata(data) 
+                setLoading(false)
     
-            
-            
             }catch(error) {
                console.log("erro")
             }
@@ -32,7 +30,7 @@ function ApiProvider ({children}) {
     },[cityname])
 
     return (
-         <DataWeather.Provider value={{weatherDatas, setCityname, cityname}}>
+         <DataWeather.Provider value={{weatherDatas, setCityname, cityname, loading}}>
             {children}
          </DataWeather.Provider>
     )

@@ -6,9 +6,11 @@
 .container-weekdays{
    margin-top: 15px;
    padding: 6px 0px;
+
    border: 1px solid #ffffff9c;
    border-left-style: none;
    border-right-style: none;
+
    opacity: 0.6;
 }
 
@@ -19,18 +21,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+  height: 30px;
+  margin-top: 39px;
+
   letter-spacing: 1px;
   font-size: 19px;
   list-style: none;
-  height: 30px;
-  margin-top: 39px;
   font-family: "stagnar-light";
 }
 
 .temp{
    margin-right: 25px;
+
    display: flex;
-  align-items: center;
+   align-items: center;
 }
 .temp img{
   margin-right: 18px;

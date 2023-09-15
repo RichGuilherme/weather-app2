@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -9,94 +9,101 @@
     font-family: "Typepold";
     src: url("./assets/fonts/Typold-Book500.otf") format("OpenType");
 }
+
 @font-face {
     font-family: "stagnar-light";
     src: url("./assets/fonts/stagnan-light.ttf") format("trueType");
 }
+
 @font-face {
     font-family: "slateBold";
     src: url("./assets/fonts/SlateBold.TTF") format("trueType");
 }
 
-.app{
+
+main {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 100%;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+
     color: #fff;
     text-shadow: 1px 1px 2px #333;
 }
 
-main{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    box-sizing: border-box;
-    
-}
-
-.container-contents{
+.container-contents {
     height: 100vh;
-    padding: 0 60px;
     max-width: 100%;
+    padding: 0 60px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.topo-main{
+.topo-main {
     position: relative;
     top: 50px;
     margin-bottom: 60px;
+
     display: flex;
     justify-content: space-between;
 }
-.topo-main > h1 {
+
+.topo-main>h1 {
     font-size: 27px;
     font-family: "slateBold";
 }
 
 
 
-#sideBar-contents{
+#sideBar-contents {
     width: min(600px, 100%);
 
     border-top: 1px solid #ffffff27;
     border-radius: 40px 40px 0 0;
+
     background-color: rgba(75, 75, 75, 0.3);
     -webkit-backdrop-filter: blur(29px);
     backdrop-filter: blur(29px);
     box-sizing: border-box;
 }
 
-#sideBar-constent h1{
+#sideBar-constent h1 {
     font-size: 21px;
     letter-spacing: 1px;
     font-family: "Typepold", sans-serif;
- 
+
 }
 
 
 /* media query*/
 
-@media (max-width: 1307px){
+@media (max-width: 1307px) {
     main {
         flex-direction: column;
     }
+
     .container-contents {
         height: calc(100vh - 200px);
         margin-bottom: 150px;
     }
-    
-    #sideBar-contents{
+
+    #sideBar-contents {
         width: 100%;
         padding: 0 28px;
     }
 }
 
 @media (max-width: 400px) {
-  .container-contents{
-    padding: 0 9px;
-  }
-  
+    .container-contents {
+        padding: 0 9px;
+    }
+
 }
